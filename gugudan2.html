@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>99dan</title>
+</head>
+<body>
+    <h1>구구단 전체 출력</h1>
+    <script>
+        let result= [];
+        let n = 3;
+        for (let n=2 ; n<=9; n++){
+                // calculate
+                for (let i = 1; i <= 9; i++){
+                    result[i] = n*i;
+                }
+                document.write("<h2>"+ n + "단</h2>");
+                // print
+                for (let i = 1; i <= 9; i++) {
+                    let str =  "";
+                    str += n;
+                    str += ' X '
+                    str += i;
+                    str += ' = '
+                    str += result[i];
+                    str += " <br> ";
+                    document.write(str);
+                }
+        }
+    </script>
+</body>
+</html>
